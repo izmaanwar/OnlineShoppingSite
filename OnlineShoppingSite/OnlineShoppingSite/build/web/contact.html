@@ -1,0 +1,189 @@
+<html>
+<head>
+<style>
+body {
+    color:blue;
+    
+    
+}
+
+h1 {
+    color:white;
+    text-align:center;
+   
+    
+}
+h3
+{
+text-align:center;
+}
+.dropbtn {
+    background-color:white;
+    color: blue;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+<script>
+
+function validate() { 
+ 
+	 var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+ var x = document.forms["myForm"]["mail"].value;
+    if (x == "") {
+        alert("email must be filled out");
+        return false;
+    }
+ var x = document.forms["myForm"]["msg"].value;
+    if (x == "") {
+        alert("message must be filled out");
+        return false;
+    }
+}
+
+</script>
+</head>
+ <body>
+<h1>contact</h1>
+<img src="shopping.jpg" alt="shoopingpic" style="float:left;width:400px;height:400px;">
+<h3>contact information</h3>
+<p1>welcome to our OMEGA shopping site.
+you can contact at every time through mail,call or u can send you a text message.
+we will give a reply with in 24 hours.our phone number is given.our servie is availble at 24 hours.its a best shopping website.you can purchase all kind of materil from a shooping site.our center is located at the fotress stadium in lahore pakistan.you can also visit a center.there is a very confottable enviorment in a the center.you definately enojy to come in the center.and our center is not only laoctaed in lahore infact it is also resent in the  differnrt cities like ISLABALMAD,KARACHI,MULTAN,RALAWINDI.so dnt woory you can also visit thar shooping center.thay also provide with thw same level of confort to you.and if you have any query and you can send any type of message then you can also send message .we will give you answer within 24 hours.
+you can contact us from given below contact number nad email id.
+<form>
+<table cellpadding="3" width=10%" cellspacing="2" align="center">
+
+<tr colspan="2">
+
+<td><img src="message.jpg" alt="shoopingpic" style=width:50px;height:50px;"> </td>
+<td><div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">bsef15m005@gmail.com</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="#home">bsef15m001@gmail.com</a>
+<a href="#about">izmaanwar005@gmail.com</a>
+<a href="#contact">anshanawaz001@gmail.com</a>
+</div>
+</div></td>
+<td><img src="phone.jpg" alt="shoopingpic" style=width:50px;height:50px;"></td>
+<td><div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">+93347687663</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="#home">+42356789</a>
+<a href="#about">+87654321</a>
+<a href="#contact">+6543234567</a>
+</div>
+</div></td>
+<td colspan="3"><img src="location.png" alt="shoopingpic" style=width:50px;height:50px;"></td>
+<td><div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">PackegsMallLahore</button>
+<div id="myDropdown" class="dropdown-content">
+<a href="#home">fotressSatdiumLahore</a>
+<a href="#about">newTownIslamabad</a>
+<a href="#contact">cityTownkarachi</a>
+</div>
+</div></td>
+</tr>
+<br>
+</br>
+</table>
+  </form>
+
+ <form name ="myForm" action="hello.html" method="post" onsubmit="return validate()">
+
+<table cellpadding="2" width="50%" bgcolor="white" align="center"
+
+  cellspacing="2">
+<tr>
+
+  <td> Name</td>
+
+  <td><input type=text name="fname"  size="30"></td>
+
+  </tr>
+
+  <tr>
+
+  <td>EmailId</td>
+
+  <td><input type="email" name="mail"  size="30"></td>
+
+  </tr>
+
+   <tr>   
+    <td>Message</td>
+
+   <td><textarea name="msg" rows="10" cols="40" align="right">
+    
+    </textarea>
+    </td>
+       </tr>
+  <tr align="right">
+
+  <td><input type= submit value= Send Message!</td>
+
+  </tr>
+
+  </table>
+
+  </form>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>

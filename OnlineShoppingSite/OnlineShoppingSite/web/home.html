@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.topnav {
+  overflow: hidden;
+   background-color:red;
+    position: fixed;
+  top: 0;
+  width: 100%;
+  
+}
+
+.topnav a {
+  float:right;
+  display: block;
+  color:blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav p{
+  float:left;
+  display: block;
+  color:blue;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.topnav img{
+  float:right;
+  display: block;
+  color:blue;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 10px;
+}
+.topnav pic{
+  float:left;
+  display: block;
+  color:blue;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
+
+.topnav .search-container {
+  float:right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+   background:white;
+
+  
+}
+
+.topnav .search-container button {
+ float:right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background:white;
+  font-size: 17px;
+  border:#ddd;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+ <a href="http://localhost:8084/session/contact.html">contact|about
+  <img src="c.png" alt="HTML tutorial" style="width:50px;height:50px;">
+ </a>
+
+  <a class="active" href="http://localhost:8084/session/index.html">signIn | join <img src="sign1.png" alt="Mountain View" style=width:50px;height:50px;"></a>
+ <a href="#about">cart<img src="basket.png" alt="Mountain View" style=width:50px;height:50px></a>
+ <a href="#contact">wishlist<img src="wishlist1.jpg" alt="Mountain View" style=width:50px;height:50px></a>
+  <img src="logo.png" alt="Mountain View" style= float:left;width:75px;height:64px;><p>OMEGA Shopping<br>
+   smatter shopping,better living</p>
+  <div class="search-container">
+    <form>
+      <input type="text" placeholder="Search.." name="search">
+   
+    <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+     
+  </div>
+  </div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
